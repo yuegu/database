@@ -15,6 +15,7 @@
 		2C071FEE14F3B37C00FEECCD /* databaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C071FED14F3B37C00FEECCD /* databaseAppDelegate.m */; };
 		2C071FF114F3B37C00FEECCD /* databaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C071FF014F3B37C00FEECCD /* databaseViewController.m */; };
 		2C071FF414F3B37C00FEECCD /* databaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C071FF214F3B37C00FEECCD /* databaseViewController.xib */; };
+		2C071FFB14F3B53C00FEECCD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C071FFA14F3B53C00FEECCD /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		2C071FDD14F3B37B00FEECCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C071FDF14F3B37B00FEECCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C071FE114F3B37B00FEECCD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2C071FE514F3B37C00FEECCD /* database-Info.plist */ = {isa = PBXFileReference; path = "database-Info.plist"; sourceTree = "<group>"; };
+		2C071FE514F3B37C00FEECCD /* database-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "database-Info.plist"; sourceTree = "<group>"; };
 		2C071FE714F3B37C00FEECCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C071FE914F3B37C00FEECCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2C071FEB14F3B37C00FEECCD /* database-Prefix.pch */ = {isa = PBXFileReference; path = "database-Prefix.pch"; sourceTree = "<group>"; };
-		2C071FEC14F3B37C00FEECCD /* databaseAppDelegate.h */ = {isa = PBXFileReference; path = databaseAppDelegate.h; sourceTree = "<group>"; };
+		2C071FEB14F3B37C00FEECCD /* database-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "database-Prefix.pch"; sourceTree = "<group>"; };
+		2C071FEC14F3B37C00FEECCD /* databaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = databaseAppDelegate.h; sourceTree = "<group>"; };
 		2C071FED14F3B37C00FEECCD /* databaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = databaseAppDelegate.m; sourceTree = "<group>"; };
-		2C071FEF14F3B37C00FEECCD /* databaseViewController.h */ = {isa = PBXFileReference; path = databaseViewController.h; sourceTree = "<group>"; };
+		2C071FEF14F3B37C00FEECCD /* databaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = databaseViewController.h; sourceTree = "<group>"; };
 		2C071FF014F3B37C00FEECCD /* databaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = databaseViewController.m; sourceTree = "<group>"; };
 		2C071FF314F3B37C00FEECCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/databaseViewController.xib; sourceTree = "<group>"; };
+		2C071FFA14F3B53C00FEECCD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C071FFB14F3B53C00FEECCD /* libsqlite3.dylib in Frameworks */,
 				2C071FDE14F3B37B00FEECCD /* UIKit.framework in Frameworks */,
 				2C071FE014F3B37B00FEECCD /* Foundation.framework in Frameworks */,
 				2C071FE214F3B37B00FEECCD /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		2C071FCE14F3B37B00FEECCD = {
 			isa = PBXGroup;
 			children = (
+				2C071FFA14F3B53C00FEECCD /* libsqlite3.dylib */,
 				2C071FE314F3B37B00FEECCD /* database */,
 				2C071FDC14F3B37B00FEECCD /* Frameworks */,
 				2C071FDA14F3B37B00FEECCD /* Products */,
